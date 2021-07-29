@@ -1,0 +1,1 @@
+This repository contains directories for the project alx interview
