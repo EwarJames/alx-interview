@@ -3,7 +3,7 @@
 import sys
 
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     f_size, count = 0, 0
     s_codes = ["200", "301", "400", "401", "403", "405", "500"]
     status = [i: 0 for i in s_codes]
