@@ -22,15 +22,14 @@ if __name__ == "__main__":
         print("file size: {}".format(f_size))
         for k in sorted(s.items()):
             if s[k]:
-                print("{}: {}".format(k, s[k])
-
-    try:
-        for line in sys.stdin:
-            f_size += get_line(line)
-            if count % 10 == 0:
-                print_stats()
-            count += 1
-    except KeyboardInterrupt:
+                print("{}: {}".format(k, s[k]))
+        try:
+            for line in sys.stdin:
+                f_size += get_line(line)
+                if count % 10 == 0:
+                    print_stats()
+                count += 1
+        except KeyboardInterrupt:
+            print_stats()
+            raise
         print_stats()
-        raise
-    print_stats()
