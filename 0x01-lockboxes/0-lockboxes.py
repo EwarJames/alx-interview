@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """You have n numbers of lock boxes in ftont you.
 Each box is sequentially numbered from 0 to n-1 and
 Each box might contain keys to other boxes"""
