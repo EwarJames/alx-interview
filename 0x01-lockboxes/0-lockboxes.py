@@ -13,7 +13,8 @@ def canUnlockAll(boxes):
 
     for k in boxes:
         if len(k) == 0 or i == 0:
-            check[-1] = -1  # checks if the box is empty
+            # checks if the box is empty
+            check[-1] = -1
         for t in k:
             if t < b_size or t != i:
                 check[t] = t
