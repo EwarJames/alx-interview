@@ -6,17 +6,18 @@ Each box might contain keys to other boxes"""
 
 def canUnlockAll(boxes):
     """"Determines if all the boxes can be opened"""
-    # check boxes
-    if not boxes:
-        return False
-    if type(boxes) not list:
-        return False
+    # initializing variables
+    b_size = len(boxes)
+    check = {}
+    i = 0
 
-    un_locked = [0]
-    for i in un_locked:
-        for key in boxes[n]:
-            if key not in un_locked and boxes < len(boxes):
-                un_locked.append(key)
-    if len(un_locked) == len(boxes):
-        return True
+    for k in boxes:
+        if len(k) == 0 or i == 0:
+            check[-1] = -1  # checks if the box is empty
+        for t in k:
+            if t < b_size or t != i:
+                check[t] = t
+        if len(check) == b_size:
+            return True
+        i += 1
     return False
