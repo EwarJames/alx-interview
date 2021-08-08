@@ -19,7 +19,7 @@ if __name__ == "__main__":
             return 0
 
     def print_stats():
-        print("file size: {}".format(f_size))
+        print("File size: {}".format(f_size))
         for k in sorted(s.items()):
             if s[k]:
                 print("{}: {}".format(k, s[k]))
